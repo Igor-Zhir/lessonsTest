@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task 0</title>
+</head>
+
+<body>
+
+  <script>
+    // Задача S1 ----------------------------------
+    let a = parseFloat(prompt('Вкажіть змінну а'));
+    let b = parseFloat(prompt('Вкажіть змінну b'));
+    let c = parseFloat(prompt('Вкажіть змінну c'));
+    const num = 12;
+
+    let rezS1 = a + num + b;
+    document.write(`Результат S1 = ${rezS1.toFixed(2)}<br>`);
+
+    // Задача S2 ----------------------------------
+    let rezS2 = Math.sqrt((a + b) / (2 * a))
+    document.write(`Результат S2 = ${rezS2.toFixed(2)}<br>`);
+    
+    // Задача S3 ----------------------------------
+    let rezS3 = Math.cbrt((a + b) * c);
+    document.write(`Результат S3 = ${rezS3.toFixed(2)}<br>`);
+    
+    // Задача S4 ----------------------------------
+    let rezS4 = Math.sin((a/-b));
+    document.write(`Результат S4 = ${rezS4.toFixed(2)}`);
+
+  </script>
+</body>
+
+</html>

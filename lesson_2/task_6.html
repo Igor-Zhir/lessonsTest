@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style_tusk_6.css">
+  <title>task 6</title>
+</head>
+
+<body>
+
+  <script>
+    // Задача 6. З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+
+    let trainersProduct = parseInt(prompt('Вкажіть кількість пар кросівок'));
+    let trainersPrice = parseFloat(prompt('Вкажіть вартість пари кросівок')).toFixed(2);
+
+    let tShortProduct = parseInt(prompt('Вкажіть кількість футболок'));
+    let tShortPrice = parseFloat(prompt('Вкажіть вартість футболки за 1 шт')).toFixed(2);
+
+    let capProduct = parseInt(prompt('Вкажіть кількість кепок'));
+    let capPrice = parseFloat(prompt('Вкажіть вартість кепки за 1 шт')).toFixed(2);
+
+    let resTrainers = trainersProduct * trainersPrice;
+    let resTshort = tShortProduct * tShortPrice;
+    let resCap = capProduct * capPrice;
+
+    let resSum = (resTrainers + resTshort + resCap).toFixed(2);
+
+    document.write(`
+      <div class="receipt">
+        <h1 class="title">Чек</h1>
+  <table>
+    <tr>
+      <th>Товар</th>
+      <th>Кількість</th>
+      <th>Сума за одиницю</th>
+      <th>Сума</th>
+    </tr>
+    <tr>
+      <td>Кросівки</td>
+      <td>${trainersProduct} Шт</td>
+      <td>${trainersPrice}</td>
+      <td>${resTrainers}</td>
+    </tr>
+    <tr>
+      <td>Футболки</td>
+      <td>${tShortProduct} Шт</td>
+      <td>${tShortPrice}</td>
+      <td>${resTshort}</td>
+    </tr>
+    <tr>
+      <td>Кепки</td>
+      <td>${capProduct} Шт</td>
+      <td>${capPrice}</td>
+      <td>${resCap}</td>
+    </tr>
+  </table>
+<p class="text">Разом: ${resSum}</p>
+</div>
+    `);
+  </script>
+
+</body>
+
+</html>
