@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tusk 4</title>
+</head>
+
+<body>
+
+  <script>
+
+    // Задача 4. Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.
+
+    let lengthInCm = parseFloat(prompt('Для визначення сантиметрів до метрів та кілометрів вкажіть СМ'));
+
+    let metr = 100;
+    let km = 100000;
+
+    let cmToMetr = lengthInCm / metr;
+    let cmToKm = lengthInCm / km;
+
+    document.write(`${lengthInCm} см це ${cmToMetr} метр(а, ів)<br>`);
+    document.write(`${lengthInCm} см це ${cmToKm} кілометр(а, ів)`);
+    
+  </script>
+
+</body>
+
+</html>
